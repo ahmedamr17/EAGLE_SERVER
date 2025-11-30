@@ -25,11 +25,11 @@ ZIP_PATH="/tmp/Server_EAGLE.zip"
 EXTRACT_DIR="/tmp/Server_EAGLE"
 INSTALL_DIR="/usr/lib/enigma2/python/Plugins/Extensions"
 
-PLUGIN_URL="https://github.com/ahmedamr17/EAGLE_SERVER/raw/refs/heads/main/Server_EAGLE.zip"
+PLUGIN_URL="https://raw.githubusercontent.com/ahmedamr17/EAGLE_SERVER/main/Server_EAGLE.zip"
 
 # === Step 1: Download ===
 echo "[1/4] 🔽 Downloading plugin package from:"
-echo "    https://github.com/ahmedamr17/EAGLE_SERVER/raw/refs/heads/main/Server_EAGLE.zip"
+echo "https://raw.githubusercontent.com/ahmedamr17/EAGLE_SERVER/main/Server_EAGLE.zip"
 cd /tmp || { echo "❌ Cannot change directory to /tmp. Aborting."; exit 1; }
 wget "$PLUGIN_URL" -O "$ZIP_PATH"
 if [ $? -ne 0 ]; then
@@ -65,7 +65,7 @@ echo "🎉 The plugin \"Server_EAGLE\" (v1.00) has been installed successfully."
 # === Subscription info ===
 echo ""
 echo "📞 للإشتراك المرجو التواصل معنا عبر الواتس آب أو رقم الهاتف:"
-echo "    01068512690"
+echo "01068512690"
 echo ""
 
 exit 0
