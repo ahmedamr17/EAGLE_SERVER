@@ -1,22 +1,22 @@
 #!/bin/sh
 
 # ------------------------------
-# ⚙ REALCAM Plugin Installer (Updated)
+# ⚙ Server_EAGLE Plugin Installer (Updated)
 # ------------------------------
 
-PLUGIN_NAME="REALCAM"
-PLUGIN_VERSION="1.89"
+PLUGIN_NAME="Server_EAGLE"
+PLUGIN_VERSION="1.00"
 
 clear
 echo ""
 echo "┌────────────────────────────────────────────────────┐"
-echo "│         ⚙ AMR TEAM ⚙            │"
+echo "│                  ⚙ AMR TEAM ⚙                     │"
 echo "├────────────────────────────────────────────────────┤"
-echo "│ This script will install the REALCAM plugin     │"
+echo "│ This script will install the REALCAM plugin        │"
 echo "│ on your Enigma2-based receiver.                    │"
 echo "│                                                    │"
 echo "│ Version   : 1.89                                   │"
-echo "│ Developer : SKYINFO                           │"
+echo "│ Developer : Ahmed Amr                              │"
 echo "└────────────────────────────────────────────────────┘"
 echo ""
 
@@ -25,11 +25,11 @@ ZIP_PATH="/tmp/Server_EAGLE.zip"
 EXTRACT_DIR="/tmp/Server_EAGLE"
 INSTALL_DIR="/usr/lib/enigma2/python/Plugins/Extensions"
 
-PLUGIN_URL="https://raw.githubusercontent.com/sky-info1/realcam/main/REALCAM.zip"
+PLUGIN_URL="https://github.com/ahmedamr17/EAGLE_SERVER/raw/refs/heads/main/Server_EAGLE.zip"
 
 # === Step 1: Download ===
 echo "[1/4] 🔽 Downloading plugin package from:"
-echo "    https://raw.githubusercontent.com/sky-info1/realcam/main/REALCAM.zip"
+echo "    https://github.com/ahmedamr17/EAGLE_SERVER/raw/refs/heads/main/Server_EAGLE.zip"
 cd /tmp || { echo "❌ Cannot change directory to /tmp. Aborting."; exit 1; }
 wget "$PLUGIN_URL" -O "$ZIP_PATH"
 if [ $? -ne 0 ]; then
@@ -45,8 +45,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-rm -rf "$INSTALL_DIR/REALCAM"
-cp -r "$EXTRACT_DIR/REALCAM" "$INSTALL_DIR"
+rm -rf "$INSTALL_DIR/Server_EAGLE"
+cp -r "$EXTRACT_DIR/Server_EAGLE" "$INSTALL_DIR"
 if [ [ $? -ne 0 ]; then
     echo "❌ Failed to copy plugin to Enigma2 plugins directory."
     exit 1
@@ -60,12 +60,12 @@ rm -f "$ZIP_PATH"
 # === Step 4: Final Message ===
 echo "[4/4] ✅ Installation complete!"
 echo ""
-echo "🎉 The plugin \"REALCAM\" (v1.89) has been installed successfully."
+echo "🎉 The plugin \"Server_EAGLE\" (v1.00) has been installed successfully."
 
 # === Subscription info ===
 echo ""
 echo "📞 للإشتراك المرجو التواصل معنا عبر الواتس آب أو رقم الهاتف:"
-echo "    +212635332378"
+echo "    01068512690"
 echo ""
 
 exit 0
