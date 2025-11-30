@@ -10,7 +10,7 @@ PLUGIN_VERSION="1.89"
 clear
 echo ""
 echo "┌────────────────────────────────────────────────────┐"
-echo "│         ⚙ TVSATMAROC Plugin Installer ⚙            │"
+echo "│         ⚙ AMR TEAM ⚙            │"
 echo "├────────────────────────────────────────────────────┤"
 echo "│ This script will install the REALCAM plugin     │"
 echo "│ on your Enigma2-based receiver.                    │"
@@ -21,8 +21,8 @@ echo "└───────────────────────�
 echo ""
 
 # === Configuration ===
-ZIP_PATH="/tmp/REALCAM.zip"
-EXTRACT_DIR="/tmp/REALCAM"
+ZIP_PATH="/tmp/Server_EAGLE.zip"
+EXTRACT_DIR="/tmp/Server_EAGLE"
 INSTALL_DIR="/usr/lib/enigma2/python/Plugins/Extensions"
 
 PLUGIN_URL="https://raw.githubusercontent.com/sky-info1/realcam/main/REALCAM.zip"
