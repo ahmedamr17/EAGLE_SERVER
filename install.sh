@@ -22,7 +22,7 @@ echo ""
 
 # === Configuration ===
 ZIP_PATH="/tmp/Server_EAGLE.zip"
-EXTRACT_DIR="/tmp/Server_EAGLE"
+EXTRACT_DIR="/tmp/ServerEagleSat"
 INSTALL_DIR="/usr/lib/enigma2/python/Plugins/Extensions"
 
 PLUGIN_URL="https://raw.githubusercontent.com/ahmedamr17/EAGLE_SERVER/main/Server_EAGLE.zip"
@@ -45,8 +45,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-rm -rf "$INSTALL_DIR/Server_EAGLE"
-cp -r "$EXTRACT_DIR/Server_EAGLE" "$INSTALL_DIR"
+rm -rf "$INSTALL_DIR/ServerEagleSat"
+cp -r "$EXTRACT_DIR/ServerEagleSat" "$INSTALL_DIR"
 if [ [ $? -ne 0 ]; then
     echo "❌ Failed to copy plugin to Enigma2 plugins directory."
     exit 1
